@@ -10,10 +10,14 @@
        http://www.springframework.org/schema/webflow-config 
        http://www.springframework.org/schema/webflow-config/spring-webflow-config.xsd">
 
+
+
 	<bean id="flowHandlerMapping"
 		class="org.springframework.webflow.mvc.servlet.FlowHandlerMapping">
 		<property name="flowRegistry" ref="flowRegistry"></property>
 	</bean>
+
+
 	<bean id="flowHandlerAdapter"
 		class="org.springframework.webflow.mvc.servlet.FlowHandlerAdapter">
 		<property name="flowExecutor" ref="flowExecutor"></property>
